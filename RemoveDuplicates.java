@@ -1,0 +1,16 @@
+class RemoveDuplicates{
+public static void main (String []args){
+int [] arr={1,1,2,2,3,3,4};
+int left=0;
+int right=1;
+while(right<arr.length){
+if(arr[right]!=arr[left])
+{left++;
+arr[left]=arr[right];
+				}
+right++;	}
+for(int i=0;i<=left;i++){
+	System.out.print(arr[i]+" ");
+	}
+}
+}
